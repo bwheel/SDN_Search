@@ -7,7 +7,7 @@ import csv
 from pathlib import Path
 
 CSV_URL = "https://www.treasury.gov/ofac/downloads/sdn.csv"
-DB_FILE = Path("static/sdn.db")
+DB_FILE = Path("docs/sdn.db")
 CSV_FILE = Path("sdn.csv")
 
 
