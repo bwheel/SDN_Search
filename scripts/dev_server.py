@@ -13,7 +13,7 @@ def main():
     server.watch("*.db")
 
     # Serve current directory
-    server.serve(root=f"{os.getcwd()}/static", port=5500)
+    server.serve(root=f"{os.getcwd()}/docs", port=5500)
 
 
 if __name__ == "__main__":
