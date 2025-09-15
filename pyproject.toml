@@ -1,0 +1,15 @@
+[project]
+name = "sdn-search"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["livereload>=2.7.1", "requests>=2.32.5"]
+[tool.uv.scripts.create_db]
+cmd = "python scripts/create_db.py"
+
+[tool.uv.scripts.dev_server]
+cmd = "python scripts/dev_server.py"
+
+[tool.uv.scripts.rebuild_and_serve]
+rebuild-and-serve = "uv run create-db && uv run dev-server"
