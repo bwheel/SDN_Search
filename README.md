@@ -16,10 +16,15 @@ A client-side searchable web app for the [US Treasury OFAC SDN List](https://san
 
 ## building the db
 ``` bash
-uv run python -m scripts.create_db
+uv run python -m bin.build
+uv run python -m bin.create_db
 ```
 
 ## running the dev server locally
 ``` bash
-uv run python -m scripts.dev_server
+uv run python -m bin.dev_server
 ```
+
+
+### Demo
+![Demo](demo.gif "Searching the registry")
