@@ -1,2 +1,11 @@
+__pycache__
+*.py[codz]
+
+dist/
+
 .venv
+
+.ruff_cache
+
 sdn.csv
+sdn.csv.gz

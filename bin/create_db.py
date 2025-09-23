@@ -7,7 +7,7 @@ import csv
 from pathlib import Path
 
 CSV_URL = "https://www.treasury.gov/ofac/downloads/sdn.csv"
-DB_FILE = Path("docs/sdn.db")
+DB_FILE = Path("dist/sdn.db")
 CSV_FILE = Path("sdn.csv")
 
 
@@ -32,7 +32,7 @@ def build_db():
         for row in rows:
             writer.writerow(["" if x is None else x for x in row])
 
-    DB_FILE.parent.mkdir(exist_ok=True)  # ensure 'data/' directory exists
+    DB_FILE.parent.mkdir(exist_ok=True)
     conn = sqlite3.connect(DB_FILE)
     cur = conn.cursor()
 

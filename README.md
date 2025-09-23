@@ -14,7 +14,12 @@ A client-side searchable web app for the [US Treasury OFAC SDN List](https://san
 
 ---
 
-## Running
+## building the db
 ``` bash
-uv run rebuild-and-serve
+uv run python -m scripts.create_db
+```
+
+## running the dev server locally
+``` bash
+uv run python -m scripts.dev_server
 ```
