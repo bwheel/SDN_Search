@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - gh_pages
+  schedule:
+    - cron: "0 3 * * *" # runs daily at 3:00 UTC
 
 jobs:
   build:
